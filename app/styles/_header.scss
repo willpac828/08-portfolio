@@ -1,0 +1,35 @@
+$c-white: #fff;
+$c-header: #15142f;
+
+
+
+.top {
+  background-color: $c-header;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+  margin: auto;
+  color: $c-white;
+
+  &__name {
+    font-weight: bolder;
+  }
+
+  &__nav {
+    display: flex;
+    flex-basis: 12rem;
+    justify-content: space-between;
+
+    &-item {
+      display: inline;
+    }
+
+    &-link {
+      color: $c-white;
+      text-decoration: none;
+  }
+}
+}

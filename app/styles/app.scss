@@ -1,7 +1,31 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
 @import 'resets';
+@import 'header';
+@import 'hero';
+@import 'footer';
+@import 'main';
+
+$c-white: #fff;
+$c-header: #15142f;
+$c-big-idea: #5bdb7b;
+$c-black: #000;
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      font-size: 2rem;
+    }
+  }
+}

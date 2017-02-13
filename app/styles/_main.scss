@@ -1,0 +1,23 @@
+.main__title {
+  margin: 3rem;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  &__img {
+    width: 21rem;
+    height: 12rem;
+  }
+}
+
+.right {
+  flex-direction: row;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
