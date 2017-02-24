@@ -1,0 +1,135 @@
+$c-white: #fff;
+$c-header: #15142f;
+$c-big-idea: #5bdb7b;
+$c-black: #000;
+$c-tag: #0029ff;
+$c-card-head: #db1628;
+$c-box-shadow: rgba(0, 0, 0, 0.4);
+$c-card-background: #f0f0ec;
+
+body {
+  margin: 0;
+  color: $c-black;
+  font: 1rem sans-serif;
+
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+.author {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+}
+
+
+
+.nav {
+  background-color: $c-tag;
+  color: $c-white;
+  overflow: auto;
+}
+
+.nav__left {
+  padding-left: 2rem;
+  float: left;
+}
+
+.nav__right {
+  padding-right: 2rem;
+  float: right;
+}
+
+
+
+.nav__item {
+  display: inline;
+}
+
+a {
+  margin: 0 1rem;
+  color: $c-white;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.section-used {
+  margin: 0;
+  padding: 1rem;
+  background-color: $c-white;
+}
+
+.container {
+  max-width: 55rem;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.grid__item {
+  flex-basis: calc(100% / 2 - 2rem);
+  min-width: 20rem;
+  margin: 1rem;
+}
+
+.card {
+
+  box-shadow: 2px 2px 2px $c-box-shadow;
+
+}
+
+.card__head {
+  position: relative;
+  padding: 0.5rem;
+  background-color: $c-card-head;
+
+}
+
+.card__head p {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0.5rem;
+  transform: translate(-50%, -50%);
+  background-color: $c-tag;
+  border-radius: 10%;
+  color: $c-white;
+}
+
+.card__head h4 {
+  display: inline-block;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+
+
+.card__content {
+  margin-top: 0;
+  padding: 1rem;
+  background-color: $c-card-background;
+}

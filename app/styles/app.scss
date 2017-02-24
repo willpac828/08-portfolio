@@ -9,6 +9,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'hero';
 @import 'footer';
 @import 'main';
+@import 'index-media';
+@import 'blog';
 
 $c-white: #fff;
 $c-header: #15142f;
@@ -17,15 +19,4 @@ $c-black: #000;
 
 body {
   font-family: 'PT Sans Narrow', sans-serif;
-}
-
-@media screen and (max-width: 480px) {
-  .project {
-    display: flex;
-    flex-direction: column;
-
-    &__text {
-      font-size: 2rem;
-    }
-  }
 }
