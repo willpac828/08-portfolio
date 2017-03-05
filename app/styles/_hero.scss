@@ -1,0 +1,22 @@
+$c-white: #fff;
+$c-big-idea: #5bdb7b;
+
+.big__idea {
+  background-color: $c-big-idea;
+}
+
+.hero {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $c-white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+}
