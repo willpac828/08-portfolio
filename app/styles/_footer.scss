@@ -4,9 +4,11 @@ $c-big-idea: #5bdb7b;
 $c-black: #000;
 
 .footer {
+
   background-color: $c-black;
 
   &__social {
+    min-width: 20rem;
     text-align: center;
   }
 

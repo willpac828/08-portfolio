@@ -2,7 +2,7 @@ $c-white: #fff;
 $c-header: #15142f;
 $c-big-idea: #5bdb7b;
 $c-black: #000;
-$c-tag: #0029ff;
+$c-tag: #cfc9ce;
 $c-card-head: #db1628;
 $c-box-shadow: rgba(0, 0, 0, 0.4);
 $c-card-background: #f0f0ec;
@@ -77,21 +77,21 @@ a {
 }
 
 .container {
-  max-width: 55rem;
+  max-width: 52rem;
   margin: auto;
-  padding-top: 2rem;
+
 }
 
-.grid {
+.blog-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1rem;
 }
 
-.grid__item {
+.blog-grid__item {
   flex-basis: calc(100% / 2 - 2rem);
-  min-width: 20rem;
+
   margin: 1rem;
 }
 
@@ -106,25 +106,28 @@ a {
   padding: 0.5rem;
   background-color: $c-card-head;
 
+  &-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0.5rem;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    background-color: $c-tag;
+    color: $c-white;
+  }
+
+  &-title {
+    display: inline-block;
+    margin: 0;
+    padding: 1.5rem;
+  }
 }
 
-.card__head p {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin: 0;
-  padding: 0.5rem;
-  transform: translate(-50%, -50%);
-  background-color: $c-tag;
-  border-radius: 10%;
-  color: $c-white;
-}
 
-.card__head h4 {
-  display: inline-block;
-  margin: 0;
-  padding: 1.5rem;
-}
+
+
 
 
 
@@ -132,4 +135,19 @@ a {
   margin-top: 0;
   padding: 1rem;
   background-color: $c-card-background;
+}
+
+@media screen and (max-width: 480px) {
+
+  .blog-grid {
+    justify-content: center;
+  }
+
+  .blog-grid__item {
+    flex-basis: calc(100% - 2rem);
+  }
+
+  .card__content {
+    font-size: 1rem;
+  }
 }
